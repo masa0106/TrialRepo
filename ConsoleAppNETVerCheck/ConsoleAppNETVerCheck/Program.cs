@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.Win32;
 
 public class GetDotNetVersion
 {
-    public static void Main()
+    public static  void Main()
     {
         GetDotNetVersion.Get45PlusFromRegistry();
+        Console.ReadKey();
     }
 
     private static void Get45PlusFromRegistry()
